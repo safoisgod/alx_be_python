@@ -1,25 +1,25 @@
-def calculator(number_1, number_2, operation):
+def calculator(num1, num2, operation):
     match operation:
         case "+":
-            return f"The result is {number_1 + number_2}"
+            print(f"The result is {num1 + num2}")
         case "-":
-            return f"The result is {number_1 - number_2}"
+            print(f"The result is {num1 - num2}")
         case "*":
-            return f"The result is {number_1 * number_2}"
+            print(f"The result is {num1 * num2}")
         case "/":
-            if number_2 == 0:
-                return "Cannot divide by zero"
+            if num2 == 0:
+                print("Cannot divide by zero.")
             else:
-                return f"The result is {number_1 / number_2}"
+                print(f"The result is {num1 / num2}")
         case _:
-            return "unknown operator"
+            print("Unknown operator.")
 
 def receive_input():
-    number_1 = int(input("Enter the first number: "))
-    number_2 = int(input("Enter the second number: "))
-    operator = input("Choose the operation (+, -, *, /): ")
+    num1 = int(input("Enter the first number: "))
+    num2 = int(input("Enter the second number: "))
+    operation = input("Choose the operation (+, -, *, /): ")
 
-    print(calculator(number_1, number_2, operator))
-
+    calculator(num1, num2, operation)
 
 receive_input()
+
