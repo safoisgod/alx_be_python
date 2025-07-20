@@ -1,5 +1,5 @@
-def calculator(number_1, number_2, operator):
-    match operator:
+def calculator(number_1, number_2, operation):
+    match operation:
         case "+":
             return f"The result is {number_1 + number_2}"
         case "-":
